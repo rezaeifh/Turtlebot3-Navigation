@@ -1,12 +1,12 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 # import usefull packages
 import rospy
 import actionlib
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
-from find_wall.srv import FindWall, FindWallRequest
-from find_wall.msg import OdomRecordAction, OdomRecordGoal
+from follow_wall.srv import FindWall, FindWallRequest
+from follow_wall.msg import OdomRecordAction, OdomRecordGoal
 
 
 class TrackingClass():
