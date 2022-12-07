@@ -13,14 +13,14 @@
   <library_effects>
     <effect id="Material_001-effect">
       <profile_COMMON>
-        <newparam sid="Circuit_lab_The_Construct_2020_png-surface">
+        <newparam sid="road_png-surface">
           <surface type="2D">
-            <init_from>Circuit_lab_The_Construct_2020_png</init_from>
+            <init_from>road_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="Circuit_lab_The_Construct_2020_png-sampler">
+        <newparam sid="road_png-sampler">
           <sampler2D>
-            <source>Circuit_lab_The_Construct_2020_png-surface</source>
+            <source>road_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -29,7 +29,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="Circuit_lab_The_Construct_2020_png-sampler" texcoord="UVMap"/>
+              <texture texture="road_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -40,8 +40,8 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="Circuit_lab_The_Construct_2020_png" name="Circuit_lab_The_Construct_2020_png">
-      <init_from>Circuit_lab_The_Construct_2020.png</init_from>
+    <image id="road_png" name="road_png">
+      <init_from>road.png</init_from>
     </image>
   </library_images>
   <library_materials>

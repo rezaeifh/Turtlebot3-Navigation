@@ -138,50 +138,6 @@
     </include>
 
 
-
-  <!-- Pedestrian
-    <include>
-      <uri>model://pedestrian</uri>
-      <name>pedestrian1</name>
-      <pose>-0.426019 0.661035 0.002 0 0 0</pose>
-    </include> -->
-
-    <!-- Traffic lights 
-    <include>
-      <uri>model://trafficlight</uri>
-      <name>trafficlight1</name>
-      <pose>-0.035635 -0.649876 0.002 0 0 -1.983460</pose>
-    </include> -->
-
-  <!-- Pedestrian -->
-    <!--<include>
-      <uri>model://pedestrian</uri>
-      <name>pedestrian1</name>
-      <pose>-0.526019 0.661035 0.002 0 0 0</pose>
-    </include>-->
-
-    <!-- Traffic lights -->
-    <!--<include>
-      <uri>model://trafficlight</uri>
-      <name>trafficlight1</name>
-      <pose>-0.035635 -0.649876 0.002 0 0 -1.983460</pose>
-    </include>-->
-
-
-    <!-- Street Signals  -->
-    <!--
-    <include>
-      <uri>model://street_sign_turnban</uri>
-      <name>street_sign_turnban1</name>
-      <pose>0.067692 0.687554 0.002 0 0 0</pose>
-    </include>
-    -->
-    <!-- <include>
-      <uri>model://triangular_prism_direccion_obligada</uri>
-      <name>triangular_prism_direccion_obligada0</name>
-       <pose>0.067692 0.687554 0 0 0 1.5708</pose>
-    </include> -->
-
     <!-- Cardboard Obstacle 1 -->
     <include>
       <uri>model://triangular_prism_stop</uri>
