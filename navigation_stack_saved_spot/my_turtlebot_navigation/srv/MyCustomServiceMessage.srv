@@ -1,0 +1,6 @@
+# request
+string label
+---
+#response
+string goalpose
+string message
