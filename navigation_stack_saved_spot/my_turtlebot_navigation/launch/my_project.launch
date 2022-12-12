@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="my_turtlebot_navigation" type="get_coordinates_service_server.py" name="spot_finder" output="screen">
+  </node>
+
+  <node pkg="my_turtlebot_navigation" type="send_coordinates_action_client.py" name="path_planning_project" output="screen">
+  </node>
+
+</launch>
