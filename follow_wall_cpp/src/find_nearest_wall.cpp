@@ -42,7 +42,7 @@ class NearWallClass
         second_dis = dis->ranges[150];
 	}
         
-        bool my_callback(follow_wall_cpp::FindWall::Request &request,
+     bool my_callback(follow_wall_cpp::FindWall::Request &request,
                          follow_wall_cpp::FindWall::Response &srv_response)
         {
         

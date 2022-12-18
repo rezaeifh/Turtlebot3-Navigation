@@ -27,7 +27,6 @@ protected:
         
         //ROS action
         actionlib::SimpleActionClient<follow_wall_cpp::OdomRecordAction> action_client;
-        
         actionlib::SimpleClientGoalState state_result = action_client.getState();
         
         

@@ -8,6 +8,8 @@ project(my_turtlebot_navigation)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  actionlib
+  roscpp
   rospy
   std_msgs
   message_generation
@@ -104,6 +106,7 @@ generate_messages(
 catkin_package(
       CATKIN_DEPENDS
       rospy
+      roscpp
 )
 
 ###########
@@ -132,6 +135,18 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/my_turtlebot_navigation_node.cpp)
 
+add_executable(get_coordinates_service_server src/get_coordinates_service_server.cpp)
+add_dependencies(get_coordinates_service_server ${get_coordinates_service_server_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(get_coordinates_service_server
+   ${catkin_LIBRARIES}
+ )
+ 
+add_executable(send_coordinates_action_client src/send_coordinates_action_client.cpp)
+add_dependencies(send_coordinates_action_client ${send_coordinates_action_client_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(send_coordinates_action_client
+   ${catkin_LIBRARIES}
+ )
+ 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use

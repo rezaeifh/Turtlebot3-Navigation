@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import yaml
 import rospy
 from my_turtlebot_navigation.srv import MyCustomServiceMessage, MyCustomServiceMessageResponse
 from geometry_msgs.msg import Pose
 
-file_path = "/home/user/catkin_ws/src/my_turtlebot_localization/config/spots.yaml"
+file_path = "/home/rezaeifh/catkin_ws/src/Turtlebot3-Navigation/navigation_stack_saved_spot/my_turtlebot_localization/config/spots.yaml"
 
 
 class Spotfind():
