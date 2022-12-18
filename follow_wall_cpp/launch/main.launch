@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg = "follow_wall_cpp" type = "find_nearest_wall" name = "find_nearest_wall_node" output = "screen" />
+    <node pkg = "follow_wall_cpp" type = "odom_record_action" name = "record_odom_node" output = "screen" />
+    <node pkg = "follow_wall_cpp" type = "follow_wall_run" name = "follow_wall_node" output = "screen" />
+    
+</launch>
+
