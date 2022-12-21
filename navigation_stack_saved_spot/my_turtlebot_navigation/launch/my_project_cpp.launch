@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <rosparam file= "$(find my_turtlebot_localization)/config/spots.yaml"/>
+  <node pkg="my_turtlebot_navigation" type="get_coordinates_service_server" name="spot_finder" output="screen">
+  </node>
+
+  <node pkg="my_turtlebot_navigation" type="send_coordinates_action_client" name="path_planning_project" output="screen">
+  </node>
+
+</launch>
