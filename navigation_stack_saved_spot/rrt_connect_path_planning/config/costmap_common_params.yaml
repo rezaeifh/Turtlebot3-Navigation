@@ -1,0 +1,23 @@
+max_obstacle_height: 0.60 
+
+
+footprint: [[-0.1, -0.1], [-0.1, 0.1], [0.04, 0.1], [0.04, -0.1]]
+footprint_padding: 0.00
+
+robot_base_frame: base_footprint
+
+update_frequency: 5.0
+publish_frequency: 5.0
+transform_tolerance: 0.5
+
+obstacle_range: 1.0
+raytrace_range: 1.5
+
+inflation_layer:
+  inflation_radius: 0.004
+  cost_scaling factor: 5.0
+
+obstacles_layer:
+  max_obstacle_height:  0.6
+  observation_sources: laser
+  laser: {sensor_frame: base_scan, data_type: LaserScan, clearing: true, marking: true, topic: scan, inf_is_valid: true, obstacle_range: 5.5}
