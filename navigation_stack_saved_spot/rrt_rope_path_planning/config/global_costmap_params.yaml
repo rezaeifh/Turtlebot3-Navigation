@@ -1,0 +1,16 @@
+global_costmap:
+
+  global_frame: map
+  rolling_window: false
+  resolution: 0.04
+
+  #layer definitions
+  static:
+    map_topic: /map
+    subscribe_to_updates: true
+
+
+  plugins:
+    - {name: static,                  type: "costmap_2d::StaticLayer"}
+    - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+    - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
