@@ -146,8 +146,8 @@ class Planning:
         treenumber = 1
         path3.append((path2[0], 0, treenumber))
         
-        for i in range(len(path2)-2):
-            if (self.calculate_distance(path2[i], path2[i+1]) < delta):
+        for i in range(len(path2)-1):
+            if (self.calculate_distance(path2[i], path2[i+1]) <= delta):
                 path3.append((path2[i+1],treenumber,treenumber+1))
             else:
                 while (self.calculate_distance(path3[-1][0],path2[i+1]) > delta):
@@ -177,6 +177,7 @@ class Planning:
                         path4.append((path3[i][0],path4[-1][1],path3[i][1]))
                     else:
                         path4.append((path3[i][0],path4[-1][1],path3[i][2]))
+                        
                     for s in range(i,len(path3)):
                         path4.append(path3[s])
                     path3 = path4
